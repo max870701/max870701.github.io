@@ -1,6 +1,10 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
+
+beforeEach(() => {
+ window.scrollTo = jest.fn();
+});
 
 test('renders learn react link', () => {
  render(
