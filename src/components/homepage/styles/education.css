@@ -1,18 +1,18 @@
 @import "../../../data/styles.css";
 
-.works-body {
+.education-body {
 	margin-bottom: 5px;
 	margin-top: -20px;
 }
 
-.work {
+.education {
 	display: flex;
 	padding-bottom: 15px;
 	width: 100%;
 	flex-wrap: wrap;
 }
 
-.work-image {
+.education-image {
 	height: 30px;
 	width: 30px;
 	border-radius: 50%;
@@ -20,16 +20,15 @@
 	box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25);
 }
 
-.work-title {
+.education-title {
 	font-size: 15px;
 	font-weight: 700;
 	padding-left: 20px;
 	margin-top: -3px;
 	color: var(--secondary-color);
-	flex-shrink: 0; /* 防止文本被壓縮 */
 }
 
-.work-subtitle {
+.education-subtitle {
 	position: absolute;
 	font-size: 12px;
 	color: var(--secondary-color);
@@ -37,7 +36,7 @@
 	padding-left: 50px;
 }
 
-.work-duration {
+.education-duration {
 	position: absolute;
 	width: 950px;
 	font-size: 12px;
@@ -46,24 +45,22 @@
 	color: var(--tertiary-color);
 }
 
-.work-description {
-    margin-top: 15px; /* 從上一個元素的底部添加一些間距 */
+.education-description {
+    margin-top: 10px; /* 從上一個元素的底部添加一些間距 */
     font-size: 14px; /* 設置文字大小 */
     line-height: 1.5; /* 設置行高，使文字更易於閱讀 */
     color: #333; /* 設置文字顏色 */
-	text-align: left;
-	width: 100%;
-    padding-top: 0px; /* 添加頂部內間距 */
+    padding-top: 20px; /* 添加頂部內間距 */
+    margin-left: -40px; /* 移除左側邊框 */
 }
 
-.work-description ul {
-    list-style-type: disc; /* 保持原有的列表類型為圓點 */
-    padding-left: 60px; /* 為列表添加左側內間距，以保持一致性和美觀性 */
-    margin-bottom: 0px; /* 移除列表的底部間距 */
-	margin-top: 0px;
+.education-description ul {
+    list-style-type: disc;
+    padding-left: 0px;
+	margin-bottom: 0px;
 }
 
-.work-description li {
-    margin-bottom: 5px; /* 為列表項添加底部間距，以提高可讀性 */
-    padding-left: 0px; /* 移除列表項的左側內間距 */
+.education-description li {
+    margin-bottom: 0px;
+	padding-left: 0px;
 }

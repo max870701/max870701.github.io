@@ -1,18 +1,15 @@
 const INFO = {
 	main: {
-		title: "Reactfolio by truethari",
-		name: "Tharindu N.",
-		email: "mail@tharindu.dev",
+		title: "Cheng-Yu Hsieh's Portfolio",
+		name: "Cheng-Yu Hsieh",
+		email: "max870701@gmail.com",
 		logo: "../logo.png",
 	},
 
 	socials: {
-		twitter: "https://twitter.com/",
-		github: "https://github.com/",
-		linkedin: "https://linkedin.com/",
-		instagram: "https://instagram.com/",
-		stackoverflow: "https://stackoverflow.com/",
-		facebook: "https://facebook.com/",
+		twitter: "https://twitter.com/xiecrypto1996",
+		github: "https://github.com/max870701",
+		linkedin: "https://linkedin.com/in/maxwell1996",
 	},
 
 	homepage: {

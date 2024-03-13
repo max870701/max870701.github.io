@@ -89,7 +89,11 @@
 }
 
 .homepage-works {
-	flex-basis: 600px;
+	flex-basis: 1000px;
+	padding-top: 30px;
+}
+.homepage-education {
+	flex-basis: 1000px;
 	padding-top: 30px;
 }
 
@@ -143,6 +147,12 @@
 	}
 
 	.homepage-works {
+		flex-basis: auto;
+		margin-left: -25px;
+		margin-right: -25px;
+	}
+
+	.homepage-education {
 		flex-basis: auto;
 		margin-left: -25px;
 		margin-right: -25px;
