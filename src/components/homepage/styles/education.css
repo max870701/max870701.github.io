@@ -7,7 +7,8 @@
 
 .education {
 	display: flex;
-	padding-bottom: 15px;
+	padding-bottom: 20px;
+	padding-top: 5px;
 	width: 100%;
 	flex-wrap: wrap;
 }
