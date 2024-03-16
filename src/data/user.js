@@ -74,6 +74,15 @@ const INFO = {
 			linkText: "View Tutorial",
 			link: "https://drive.google.com/file/d/1qte84RE7qtPFJEZRe_lxZLlq89AdgamH/view",
 		},
+
+		{
+			title: "Uniswap V3 Pool Dashboard",
+			description:
+				"Visualized Uniswap V3 metrics on the Dune Analytics platform, including pool counts by fee tiers, weekly and last 30-day pool creations, distributions by token pairs, and the last 100 transactions, offering an insightful overview of its trading dynamics.",
+			logo: "./dune.jpeg",
+			linkText: "View Dashboard",
+			link: "https://dune.com/Maxwell1996/uniswap-v3-pool",
+		},
 	],
 };
 
