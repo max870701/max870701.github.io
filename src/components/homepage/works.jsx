@@ -15,21 +15,42 @@ const Works = () => {
 					<div className="works-body">
 						<div className="work">
 							<img
+								src="./432hz-capital.png"
+								alt="432hz-capital"
+								className="work-image"
+							/>
+							<div className="work-title">432Hz Capital</div>
+							<div className="work-subtitle">
+								Software Engineer | Kafka/Redshift/dbt Cloud/Terraform/AWS/Docker/Python
+							</div>
+							<div className="work-duration">May 2024 - Present</div>
+							<div className="work-description">
+								<ul>
+									<li>Dockerized and managed cryptocurrency data pipelines (ETL, ELT) on AWS EC2, incorporating stream and batch processing via Kafka and Redshift for real-time and historical data feeds to quantitative traders.</li>
+									<li>Administered AWS infrastructure (Redshift, EC2, VPC, Subnet) using Terraform; deployed Kafka services with Docker and managed 30 real-time data pipelines for L2 Orderbook and Ticker data.</li>
+									<li>Implemented ELT pipelines for streaming data where data from exchange websockets was published to Kafka topics, exported to Redshift tables through subscribed containers, and transformed and materialized by dbt Cloud.</li>
+									<li>Constructed ETL pipelines for historical data that retrieved full trading pair data under exchange API rate limits, processed with Pandas, and exported to Redshift tables, covering OHLCV, open interest, and funding rate data.</li>
+								</ul>
+							</div>
+						</div>
+
+						<div className="work">
+							<img
 								src="./bytoken.png"
 								alt="bytoken"
 								className="work-image"
 							/>
-							<div className="work-title">ByToken</div>
+							<div className="work-title">Rui Feng Global Consultancy</div>
 							<div className="work-subtitle">
-								Software Engineer | Python/Docker/Kubernetes/Azure/Looker
+								Software Engineer | PostgreSQL/Kubernetes/Looker/Python/Docker
 							</div>
 							<div className="work-duration">Jun 2023 - Oct 2023</div>
 							<div className="work-description">
 								<ul>
-									<li>Developed an automated system for retrieving cryptocurrency price data, leveraged statistical insights from historical price data to fine-tune hyperparameters in quantitative trading strategies, yielding an augmented annualized return.</li>
-									<li>Dockerized an automated price data retrieval system and orchestrated it with Kubernetes, fetching the latest and 24-hour-old prices of 100 cryptocurrencies every ten minutes, computing percentage changes, partitioning them into a score range from -10 to +10, and exporting the DataFrame to the corresponding Google Sheets.</li>
-									<li>Imported time-series score distribution data (increasing by 144 rows per day) from Google Sheets into Google Looker Studio, employing line charts to visualize the daily distribution of cryptocurrencies across various score ranges and pinpointing critical trend reversal points for quantitative trading strategy development.</li>
-									<li>Employed Bayesian optimization to optimize trading strategy parameters, leading to a 15% increase in annualized returns (from 1.53% to 16.8%) and a significant 56% reduction in maximum drawdown (from 64.44% to 8.46%), thereby addressing the low-performance issue in the strategy.</li>
+									<li>Developed cryptocurrency data pipelines for batch processing, leveraged statistical insights from historical data to fine-tune hyperparameters in CTA trading strategies, enhancing annualized returns.</li>
+									<li>Designed and managed ETL pipelines on Azure Kubernetes Service to aggregate real-time and historical data from exchanges, assign scores from -10 to +10 based on price percentage changes, and export data to PostgreSQL.</li>
+									<li>Imported time-series data from PostgreSQL into Looker, employing line charts to visualize daily distribution of cryptocurrencies across various score ranges and pinpointing critical trend reversal points to gain insights.</li>
+									<li>Employed Bayesian optimization to fine-tune CTA strategies, leading to a 15% increase in annualized returns (from 1.53% to 16.8%) and a significant 56% reduction in maximum drawdown (from 64.44% to 8.46%).</li>
 								</ul>
 							</div>
 						</div>
@@ -44,7 +65,7 @@ const Works = () => {
 							<div className="work-subtitle">
 								Software Engineer | Node.js/React/MongoDB/Express/RESTful API/AWS
 							</div>
-							<div className="work-duration">Jun 2023 - Oct 2023</div>
+							<div className="work-duration">Mar 2019 - July 2022</div>
 							<div className="work-description">
 								<ul>
 									<li>Directed Agile team of 6 in building an e-commerce system with MongoDB, Express , React, Node.js, and AWS (EC2, S3), fostering teamwork and efficient coordination through Git/GitHub.</li>
