@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import ReactGA from "react-ga4";
 
@@ -17,17 +17,10 @@ function App() {
 	useEffect(() => {
 		if (TRACKING_ID !== "") {
 			ReactGA.initialize(TRACKING_ID);
+			ReactGA.send({ hitType: "pageview", page: window.location.pathname });
 		}
 	}, []);
-
-	const currentLocation = useLocation();
-
-	useEffect(() => {
-		if (TRACKING_ID && TRACKING_ID !== "") {
-			ReactGA.send({ hitType: "pageview", page: currentLocation.pathname + currentLocation.search });
-		}
-	}, [currentLocation]);
-
+	
 	return (
 		<div className="App">
 			<Routes>
