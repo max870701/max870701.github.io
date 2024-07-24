@@ -20,11 +20,13 @@ function App() {
 		}
 	}, []);
 
+	const currentLocation = useLocation();
+
 	useEffect(() => {
 		if (TRACKING_ID && TRACKING_ID !== "") {
-		  ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
+			ReactGA.send({ hitType: "pageview", page: currentLocation.pathname + currentLocation.search });
 		}
-	}, [location]);
+	}, [currentLocation]);
 
 	return (
 		<div className="App">
