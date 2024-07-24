@@ -20,6 +20,12 @@ function App() {
 		}
 	}, []);
 
+	useEffect(() => {
+		if (TRACKING_ID && TRACKING_ID !== "") {
+		  ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
+		}
+	}, [location]);
+
 	return (
 		<div className="App">
 			<Routes>

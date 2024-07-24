@@ -22,15 +22,6 @@ const Articles = () => {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_MEASUREMENT_ID}`}></script>
-				<script>
-				{`
-					window.dataLayer = window.dataLayer || []
-					function gtag(){dataLayer.push(arguments)}
-					gtag('js', new Date())
-					gtag('config', '${process.env.GA_MEASUREMENT_ID}')
-				`}
-				</script>
 				<title>{`Articles | ${INFO.main.title}`}</title>
 				<meta name="description" content={currentSEO.description} />
 				<meta
