@@ -25,12 +25,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - run: npm ci
-
       - name: Build
-        env:
-          GA4_MEASUREMENT_ID: ${{ secrets.GA4_MEASUREMENT_ID }}
-        run: npm run build
+        run: |
+          npm ci
+          npm run build
 
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v4
