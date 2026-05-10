@@ -1,5 +1,13 @@
+export type SeoPage = "home" | "about" | "articles" | "projects" | "contact";
+
+export interface SeoEntry {
+	page: SeoPage;
+	description: string;
+	keywords: string[];
+}
+
 // The description of page and keywords.
-const SEO = [
+const SEO: SeoEntry[] = [
 	{
 		page: "home",
 		description:
@@ -25,7 +33,7 @@ const SEO = [
 		page: "projects",
 		description:
 			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to.",
-		keywords: ["Cheng-Yu Hsieh", "San Jose State University", "Software Engineer", "432Hz Capital", "ByToken",  "open-source projects", "software portfolio", "blockchain projects", "Python projects", "web development projects"],
+		keywords: ["Cheng-Yu Hsieh", "San Jose State University", "Software Engineer", "432Hz Capital", "ByToken", "open-source projects", "software portfolio", "blockchain projects", "Python projects", "web development projects"],
 	},
 
 	{

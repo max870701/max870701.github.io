@@ -42,7 +42,7 @@ Clone down this repository. You will need `NodeJS` and `git` installed globally 
 2. Run the project: `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open the local URL printed by Vite, usually [http://localhost:5173](http://localhost:5173), to view it in the browser.
 The page will reload if you make edits.
 
 ## 📁 Folder structure
@@ -59,7 +59,7 @@ Since this is a public and open source project, you can make any changes to it. 
 
 Directory: `/src/data/`
 
--   `user.js`
+-   `user.ts`
 
     From this you can change the content of each page of the web application.
 
@@ -114,9 +114,9 @@ Directory: `/src/data/`
             const myArticles = [article_1, article_2, article_3];
             ```
 
--   `seo.js`
+-   `seo.ts`
 
-    The SEO.js file is a module that contains an array of objects, with each object representing metadata for a specific page of a React website. The purpose of this file is to centralize and manage the SEO (Search Engine Optimization) information for different pages.
+    The SEO.ts file is a module that contains an array of objects, with each object representing metadata for a specific page of a React website. The purpose of this file is to centralize and manage the SEO (Search Engine Optimization) information for different pages.
 
     Each object in the SEO array has the following properties:
 
@@ -126,7 +126,7 @@ Directory: `/src/data/`
 
     `description`: Provides a concise and informative description of the page content. This description is often displayed in search engine results and can greatly influence click-through rates.
     keywords: Contains an array of keywords relevant to the page's content. Keywords can help search engines understand the topics covered on the page and can impact its visibility in search results.
-    By storing the SEO information in the SEO.js file, you can easily manage and update the metadata for different pages of your React website. This approach allows you to keep the SEO data separate from the components and reuse it across the application, ensuring consistent and optimized metadata for each page.
+    By storing the SEO information in the SEO.ts file, you can easily manage and update the metadata for different pages of your React website. This approach allows you to keep the SEO data separate from the components and reuse it across the application, ensuring consistent and optimized metadata for each page.
 
     Example:
 
@@ -172,21 +172,21 @@ How to find the Google Analytics 4 MEASUREMENT ID ?
 
 ## 🚀 Building the React App
 
-To build the React app, you can use the `npm run build` command. This will create a production-ready build of your app in the `build/` directory.
+To build the React app, you can use the `npm run build` command. This will create a production-ready build of your app in the `dist/` directory.
 
 Here are the steps to follow:
 
 1. Open a terminal window and navigate to the root directory of your React app.
-2. Run the `npm run build` command to create a production build of your app. This will generate a static bundle of your app in the `build/` directory.
-3. Copy the contents of the `build/` directory to your server's public directory. You can do this using an FTP client or by running a command like `scp` to transfer the files to your server. Make sure to replace `example.com` and `/var/www/html` with your server's domain name and public directory, respectively:
+2. Run the `npm run build` command to create a production build of your app. This will generate a static bundle of your app in the `dist/` directory.
+3. Copy the contents of the `dist/` directory to your server's public directory. You can do this using an FTP client or by running a command like `scp` to transfer the files to your server. Make sure to replace `example.com` and `/var/www/html` with your server's domain name and public directory, respectively:
 
     ```bash
-    scp -r build/* user@example.com:/var/www/html
+    scp -r dist/* user@example.com:/var/www/html
     ```
 
 4. Your portfolio app should now be accessible from your server's domain name. You can verify this by opening a web browser and navigating to http://example.com (replace example.com with your server's domain name).
 
-That's it! Your React portfolio app should now be up and running on your server. Note that you may need to configure your server's web server (e.g., Apache or Nginx) to serve the index.html file in the build/ directory as the default page for your domain.
+That's it! Your React portfolio app should now be up and running on your server. Note that you may need to configure your server's web server (e.g., Apache or Nginx) to serve the index.html file in the dist/ directory as the default page for your domain.
 
 ## 🤔 FAQ
 
