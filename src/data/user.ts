@@ -1,4 +1,39 @@
-const INFO = {
+interface LinkInfo {
+	title: string;
+	description: string;
+	logo: string;
+	linkText: string;
+	link: string;
+}
+
+interface PortfolioInfo {
+	main: {
+		title: string;
+		name: string;
+		email: string;
+		logo: string;
+	};
+	socials: {
+		twitter: string;
+		github: string;
+		linkedin: string;
+	};
+	homepage: {
+		title: string;
+		description: string;
+	};
+	about: {
+		title: string;
+		description: string;
+	};
+	articles: {
+		title: string;
+		description: string;
+	};
+	projects: LinkInfo[];
+}
+
+const INFO: PortfolioInfo = {
 	main: {
 		title: "Cheng-Yu Hsieh's Portfolio",
 		name: "Cheng-Yu Hsieh",
